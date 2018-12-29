@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Actions.sass';
 
 function Actions(props) {
@@ -9,12 +10,11 @@ function Actions(props) {
           <div className="col">
             <div className="section-content">
               <h5 className="section-title">Actions</h5>
-              <button
-                type="button"
-                className="btn btn-primary"
-              >
-                Add new
-              </button>
+              <Link to="/create">
+                <button type="button" className="btn btn-primary">
+                  Add new
+                </button>
+              </Link>
             </div>
           </div>
         </div>
